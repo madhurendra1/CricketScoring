@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "app/dist",
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    // "noImplicitAny": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["app/src/*"],
+      "@api/*": ["app/src/api/*"],
+      "@core/*": ["app/src/core/*"],
+      "@errors": ["app/src/errors/index"],
+      "@schema/*": ["app/src/schema/*"],
+      "@services/*": ["app/src/services/*"],
+      "@types": ["app/src/types/index"],
+      "@utils/*": ["app/src/utils/*"]
+    }
+  },
+  "include": [
+    "app/src/**/*.ts",
+    "app/src/core/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    ".vscode"
+  ],
+}
